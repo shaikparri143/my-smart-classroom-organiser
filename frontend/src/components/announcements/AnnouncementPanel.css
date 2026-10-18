@@ -1,0 +1,150 @@
+.announcement-page {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+
+.announcement-form {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+}
+
+.announcement-form > label {
+  display: grid;
+  gap: 7px;
+  color: #4b5065;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.announcement-form input:not([type="checkbox"]):not([type="radio"]),
+.announcement-form textarea,
+.announcement-form select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #dfe2ec;
+  border-radius: 8px;
+  background: #fff;
+  color: #34384c;
+  font: inherit;
+}
+
+.announcement-form textarea {
+  resize: vertical;
+}
+
+.announcement-recipient-options {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #eceef4;
+  border-radius: 9px;
+}
+
+.announcement-recipient-options legend {
+  padding: 0 5px;
+  color: #4b5065;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.announcement-recipient-options > label,
+.announcement-student-picker > label {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #666c80;
+  font-size: 13px;
+}
+
+.announcement-student-picker {
+  display: grid;
+  gap: 10px;
+  max-height: 190px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f8f8fb;
+}
+
+.announcement-student-picker > label span {
+  overflow-wrap: anywhere;
+}
+
+.announcement-form-actions,
+.announcement-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.announcement-list {
+  display: grid;
+  gap: 12px;
+}
+
+.announcement-list > .panel-heading {
+  margin-bottom: 1px;
+}
+
+.announcement-card {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+
+.announcement-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.announcement-course {
+  color: #7669cf;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.announcement-card h3 {
+  margin: 6px 0 0;
+  color: #363a4f;
+  font-size: 17px;
+}
+
+.announcement-content {
+  margin: 0;
+  color: #666c80;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.announcement-card footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 7px 14px;
+  padding-top: 11px;
+  border-top: 1px solid #eceef4;
+  color: #858ba0;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .announcement-form,
+  .announcement-card {
+    padding: 15px;
+  }
+
+  .announcement-card-heading {
+    flex-direction: column;
+  }
+}

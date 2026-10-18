@@ -1,0 +1,318 @@
+.marks-page,
+.student-marks-page {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.marks-controls,
+.marks-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.marks-controls {
+  grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
+  align-items: end;
+  padding: 20px;
+}
+
+.marks-controls label,
+.marks-form label {
+  display: grid;
+  gap: 7px;
+  color: #4b5065;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.marks-controls select,
+.marks-form input,
+.marks-form textarea,
+.marks-table input {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 9px 11px;
+  border: 1px solid #dfe2ec;
+  border-radius: 8px;
+  background: #fff;
+  color: #34384c;
+  font: inherit;
+}
+
+.marks-form textarea {
+  min-height: 76px;
+  resize: vertical;
+}
+
+.marks-total,
+.marks-student-total > div {
+  display: grid;
+  gap: 5px;
+  color: #73798e;
+  font-size: 13px;
+}
+
+.marks-total strong,
+.marks-student-total strong {
+  color: #35394e;
+  font-size: 24px;
+}
+
+.marks-total span {
+  color: #858b9e;
+  font-size: 12px;
+}
+
+.marks-layout {
+  grid-template-columns: minmax(240px, .7fr) minmax(0, 1.6fr);
+  align-items: start;
+}
+
+.marks-components,
+.marks-form,
+.marks-table-panel,
+.student-marks-card,
+.marks-empty {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.marks-component-list {
+  display: grid;
+  gap: 8px;
+}
+
+.marks-component-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eceef4;
+  border-radius: 9px;
+  background: #fff;
+  color: #41465b;
+  text-align: left;
+  cursor: pointer;
+}
+
+.marks-component-item.is-selected {
+  border-color: #7669d1;
+  background: #f5f3ff;
+}
+
+.marks-component-item span {
+  display: grid;
+  gap: 4px;
+}
+
+.marks-component-item small {
+  color: #81869a;
+  font-size: 11px;
+}
+
+.marks-component-item b {
+  flex: none;
+  color: #6254c8;
+  font-size: 12px;
+}
+
+.marks-form h3 {
+  margin: 0;
+  color: #363a4f;
+  font-size: 15px;
+}
+
+.marks-main {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.marks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.marks-actions button,
+.marks-table-panel > .button-primary {
+  justify-self: start;
+}
+
+.button-danger {
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid #edcdcd;
+  border-radius: 8px;
+  background: #fff8f8;
+  color: #a53d3d;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-danger:disabled,
+.marks-actions button:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+.marks-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.marks-table th,
+.marks-table td {
+  min-width: 125px;
+  padding: 11px 10px;
+  border-bottom: 1px solid #eceef4;
+  color: #62687d;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.marks-table th {
+  color: #777d91;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.marks-table td:first-child {
+  min-width: 190px;
+}
+
+.marks-table td strong,
+.marks-table td small {
+  display: block;
+}
+
+.marks-table td strong {
+  color: #393d52;
+}
+
+.marks-table td small {
+  margin-top: 4px;
+  color: #82889b;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.student-marks-card .panel-heading {
+  align-items: flex-start;
+}
+
+.student-marks-card .panel-heading h2 {
+  margin: 5px 0 0;
+}
+
+.marks-progress-badge {
+  flex: none;
+  padding: 6px 10px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.marks-progress-badge.is-provisional {
+  background: #fff7e6;
+  color: #9b6a10;
+}
+
+.marks-progress-badge.is-current {
+  background: #e9f8f0;
+  color: #21784b;
+}
+
+.marks-student-total {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #eceef4;
+}
+
+.marks-provisional-note {
+  margin: 0;
+  color: #8b6a22;
+  font-size: 12px;
+}
+
+.marks-release-note {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #fff7e6;
+  color: #8b6a22;
+  font-size: 12px;
+}
+
+.marks-not-released {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border: 1px solid #f0e3bf;
+  border-radius: 8px;
+  background: #fffaf0;
+  color: #7d6228;
+  font-size: 13px;
+}
+
+.marks-not-released p {
+  margin: 0;
+  color: #857754;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.marks-empty {
+  align-content: center;
+  min-height: 180px;
+}
+
+.marks-empty h2,
+.marks-empty p {
+  margin: 0;
+}
+
+.marks-empty p {
+  color: #777d91;
+}
+
+@media (max-width: 850px) {
+  .marks-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .marks-controls,
+  .marks-student-total {
+    grid-template-columns: 1fr;
+  }
+
+  .marks-controls,
+  .marks-components,
+  .marks-form,
+  .marks-table-panel,
+  .student-marks-card {
+    padding: 15px;
+  }
+
+  .student-marks-card .panel-heading {
+    display: grid;
+  }
+}

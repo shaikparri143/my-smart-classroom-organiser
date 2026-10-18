@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:\\\\Users\\\\rohit\\\\Desktop\\\\classpilot-classroom-management\\\\frontend\"; npm run build$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
